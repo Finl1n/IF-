@@ -15,7 +15,7 @@ export function Biography() {
       image: "https://i0.wp.com/ooduarere.com/wp-content/uploads/2015/12/OPON-ifa-346x330.jpg"
     },
     {
-      title: "A Missão de Ìyánifá Fátọ́ún e Sua Caminhada com os Òrìṣàs",
+      title: "A Missão de Ìyánifá Fátọ́ún e sua Caminhada com os Òrìṣàs",
       content: "As Ìyáláwos, além de consultarem o Opẹlẹ Ifá (oráculo africano), são responsáveis por prescrever sacrifícios, orientar rituais, preparar medicinas de cura e conduzir processos espirituais e terapêuticos, sempre guiadas pelos princípios éticos e espirituais deixados por Ọ̀rúnmìlà. Elas também carregam vasto conhecimento sobre ervas, espiritualidade e bem-estar energético. Este é um breve panorama da trajetória de Ìyánifá Fátọ́ún — uma caminhada marcada pela fé, pela devoção e pela entrega total aos Òrìṣàs e ao Ifá. Sua jornada não foi — e não é — isenta de desafios. Enfrentou inúmeras barreiras, julgamentos, preconceitos e ataques espirituais, sociais e familiares, que tentaram, sem sucesso, desviá-la do seu propósito divino. Seus votos são, até hoje, dedicados ao cumprimento dos ensinamentos do Profeta Ọ̀rúnmìlà, que orienta o sacerdócio a ajudar os seres humanos a se tornarem melhores a cada dia. Sua missão é servir, honrar seus ancestrais e jamais permitir que se esqueça dos débitos históricos e espirituais, frutos dos séculos de dor e opressão impostos aos povos africanos. Pela misericórdia de Olódùmarè (Deus Supremo), seus ancestrais continuam vivos, ensinando, protegendo e conduzindo aqueles que, assim como ela, escolhem caminhar sob a luz dos Orixás e dos mistérios de Ifá.",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj78yAtN6C2BiCgYv_FufithL0RoaH2C8iwg&s"
     }
