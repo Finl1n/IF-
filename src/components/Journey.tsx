@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+// 1. Importe a imagem de fundo
+import backgroundImage from '../assets/fundo-folhas-escuras.jpg'; // Ajuste o caminho se necessário
 
 export function Journey() {
   const journeySteps = [
@@ -20,8 +22,21 @@ export function Journey() {
   ];
 
   return (
-    <div className="bg-stone-900 py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    // 2. Container principal com a imagem de fundo
+    <div 
+      className="relative py-24"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* 3. Camada de sobreposição para ofuscar */}
+      <div className="absolute inset-0 bg-stone-900 opacity-95"></div>
+      
+      {/* 4. Conteúdo principal posicionado acima */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

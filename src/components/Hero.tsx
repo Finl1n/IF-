@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+// 1. Importe a imagem da sua pasta assets
+import backgroundImage from '../assets/fundo-folhas-escuras.jpg'; // Ajuste o caminho se necessário
 
 export function Hero() {
   return (
@@ -8,7 +10,8 @@ export function Hero() {
       transition={{ duration: 1 }}
       className="relative h-screen flex items-center"
       style={{
-        backgroundImage: 'url("https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg")',
+        // 2. Use a imagem importada como background
+        backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

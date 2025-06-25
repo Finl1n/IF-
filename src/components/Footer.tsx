@@ -1,9 +1,23 @@
 import { motion } from 'framer-motion';
+// 1. Importe a imagem de fundo
+import backgroundImage from '../assets/fundo-folhas-escuras.jpg'; // Ajuste o caminho se necessário
 
 export function Footer() {
   return (
-    <footer className="bg-stone-900 text-white border-t border-stone-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    // 2. Container principal (footer) com a imagem de fundo
+    <footer 
+      className="relative text-white border-t border-stone-800"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      {/* 3. Camada de sobreposição para ofuscar */}
+      <div className="absolute inset-0 bg-stone-900 opacity-95"></div>
+
+      {/* 4. Conteúdo principal posicionado acima */}
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-3 gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
