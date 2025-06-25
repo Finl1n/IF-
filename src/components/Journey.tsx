@@ -1,28 +1,36 @@
 import { motion } from 'framer-motion';
-// 1. Importe a imagem de fundo
-import backgroundImage from '../assets/fundo-folhas-escuras.jpg'; // Ajuste o caminho se necessário
+
+// 1. Importe TODAS as imagens que você vai usar no componente
+import backgroundImage from '../assets/fundo-folhas-escuras.jpg';
+import ifaImage1 from '../assets/ifa1.png';
+import ifaImage2 from '../assets/ifa2.png';
+import ifaImage3 from '../assets/ifa3.png';
+
+// ATENÇÃO: Verifique se o caminho '../assets/' está correto para a sua estrutura de pastas.
 
 export function Journey() {
   const journeySteps = [
     {
       title: "Descendência e Tradição",
       content: "Descendente direta do Àṣẹ Bangboṣè Obitikó, concluiu com êxito os ritos tradicionais de sete anos (odú igé).",
-      image: "../src/assets/ifa1.png"
+      // 2. Use a variável importada, e não mais o caminho em texto
+      image: ifaImage1
     },
     {
       title: "Chamado do Ifá",
       content: "Seguindo esse chamado interior, iniciou sua busca pelos caminhos do Ifá, onde encontrou não só respostas, mas também sua verdadeira realização espiritual.",
-      image: "../src/assets/ifa2.png"
+      // 2. Use a variável importada
+      image: ifaImage2
     },
     {
       title: "Mestria e Sabedoria",
       content: "Após anos de estudo rigoroso, memorização e interpretação dos 256 Odùs de Ifá e seus milhares de versos, alcançou o grau de Ìyáláwo.",
-      image: "../src/assets/ifa3.png"
+      // 2. Use a variável importada
+      image: ifaImage3
     }
   ];
 
   return (
-    // 2. Container principal com a imagem de fundo
     <div 
       className="relative py-24"
       style={{
@@ -32,10 +40,8 @@ export function Journey() {
         backgroundAttachment: 'fixed'
       }}
     >
-      {/* 3. Camada de sobreposição para ofuscar */}
       <div className="absolute inset-0 bg-stone-900 opacity-95"></div>
       
-      {/* 4. Conteúdo principal posicionado acima */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
@@ -60,6 +66,7 @@ export function Journey() {
             >
               <div className="h-64 mb-6 overflow-hidden rounded-lg">
                 <img 
+                  // Agora o 'src' recebe a variável correta que a Vercel entende
                   src={step.image} 
                   alt={step.title}
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
