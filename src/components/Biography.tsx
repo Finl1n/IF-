@@ -6,7 +6,7 @@ export function Biography() {
   const paragraphs = [
     {
       title: "Origens e Chamado",
-      content: "A trajetória de Ìyánifá Fátọ́ún na religiosidade e na cultura africana nasce de uma herança ancestral profundamente enraizada, que a acompanha desde muito jovem...",
+      content: "A trajetória de Ìyánifá Fátọ́ún na religiosidade e na cultura africana nasce de uma herança ancestral, profundamente enraizada, que a acompanha desde muito jovem...",
       image: "https://cdn.guardian.ng/wp-content/uploads/2023/10/letra-del.jpg"
     },
     {
