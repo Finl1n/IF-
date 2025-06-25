@@ -5,17 +5,17 @@ export function Journey() {
     {
       title: "Descendência e Tradição",
       content: "Descendente direta do Àṣẹ Bangboṣè Obitikó, concluiu com êxito os ritos tradicionais de sete anos (odú igé).",
-      image: "https://images.pexels.com/photos/7245535/pexels-photo-7245535.jpeg"
+      image: "./src/assets/ifa1.png"
     },
     {
       title: "Chamado do Ifá",
       content: "Seguindo esse chamado interior, iniciou sua busca pelos caminhos do Ifá, onde encontrou não só respostas, mas também sua verdadeira realização espiritual.",
-      image: "https://images.pexels.com/photos/8851633/pexels-photo-8851633.jpeg"
+      image: "./src/assets/ifa2.png"
     },
     {
       title: "Mestria e Sabedoria",
       content: "Após anos de estudo rigoroso, memorização e interpretação dos 256 Odùs de Ifá e seus milhares de versos, alcançou o grau de Ìyáláwo.",
-      image: "https://images.pexels.com/photos/7245333/pexels-photo-7245333.jpeg"
+      image: "./src/assets/ifa3.png"
     }
   ];
 
